@@ -6,10 +6,10 @@
 
 /* Header */
 
-/* Header */
-
 header {
   display: flex;
+  position: fixed;
+  width: 100%;
 }
 
 ul {
@@ -63,4 +63,20 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Container */
+#Container {
+  background-image: url('assets/bahnhof_oerlikon.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh
+}
+
+/* Footer */
+
+footer {
+  background-color: #ABABAB;
+  height: 200px;
 }
