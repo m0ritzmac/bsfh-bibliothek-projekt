@@ -6,36 +6,61 @@
 
 /* Header */
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #93a9be;
-    width: 50%;
-    display: flex;
-    justify-content: space-between; 
-  }
-  
-  li {
-    margin: 0 10px; 
-    display: flex; 
-    align-items: center; 
-  }
-  
-  li a {
-    font-size: 24px;
-    display: block;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-  }
-  
-li a:hover {
-  background-color: #7b90a4;
+/* Header */
+
+header {
+  display: flex;
 }
 
-/* Container */
-#Container {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #93a9be;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
 
+li {
+  margin: 0 10px;
+  align-items: center;
+}
+
+li a {
+  font-size: 24px;
+  display: block;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+
+li a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: width 0.25s ease-out;
+}
+
+li a:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+h1 {
+  font-size: 42px;
+  background-color: #93a9be;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
